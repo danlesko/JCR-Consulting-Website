@@ -1,0 +1,20 @@
+/*!* You can add global styles to this file, and also import other style files *!*/
+
+/*.dropdown .dropdown-menu {*/
+    /*-webkit-transition: all 1.0s;*/
+    /*-moz-transition: all 1.0s;*/
+    /*-ms-transition: all 1.0s;*/
+    /*-o-transition: all 1.0s;*/
+    /*transition: all 1.0s;*/
+
+    /*max-height: 0;*/
+    /*display: block;*/
+    /*overflow: hidden;*/
+    /*opacity: 0;*/
+/*}*/
+
+/*.dropdown.open .dropdown-menu {*/
+    /*max-height: 300px;*/
+    /*opacity: 1;*/
+/*}*/
+

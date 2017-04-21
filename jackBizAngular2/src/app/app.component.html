@@ -1,0 +1,70 @@
+<div>
+    <div class="brand">J.C. Roberts Consulting LLC.</div>
+</div>
+<div>
+    <div class="address-bar hFont">5141 Columbia Road | Columbia, MD 21044 | 410-227-6030 | jcrconsult123@gmail.com
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default pFont" role="navigation">
+    <div class="">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+            <a class="navbar-brand" href="index.html">JCR Consulting</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a routerLink="/home"><strong>Home</strong></a>
+                </li>
+                <li>
+                    <a routerLink="/about"><strong>About</strong></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><strong>Expertise</strong><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a routerLink="/structure"><strong>Structural Analysis &amp; Design</strong></a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a routerLink="/composite"><strong>Composite Materials</strong></a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a routerLink="/biomedical"><strong>Biomedical &amp; Biomechanics</strong></a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a routerLink="/proposal"><strong>Proposal Writing &amp; Evaluation</strong></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a routerLink="/awards"><strong>Awards</strong></a>
+                </li>
+                <li>
+                    <a routerLink="/testimonials"><strong>Testimonials</strong></a>
+                </li>
+                <li>
+                    <a routerLink="/contact"><strong>Contact</strong></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<router-outlet></router-outlet>
+<footer>
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <div class="text-center foottext">
+                <strong>&copy; 2016 JCR Consulting LLC.</strong>
+            </div>
+        <!--</div>-->
+    <!--</div>-->
+</footer>
