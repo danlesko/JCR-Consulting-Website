@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup, FormBuilder }   from '@angular/forms';
+import { FormGroup, FormBuilder, FormsModule }   from '@angular/forms';
 import { Http, Response}           from '@angular/http';
 import { ContactService } from './contact.service';
 
@@ -9,7 +9,7 @@ import { ContactService } from './contact.service';
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
-  providers: [ContactService]
+  providers: [ContactService],
 })
 export class ContactComponent implements OnInit {
 
@@ -30,14 +30,15 @@ export class ContactComponent implements OnInit {
 
   response : any;
 
-  onSubmit(value: any){
+  onSubmit(value: any, event: Event){
+    // event.PreventDefault();
       this._contactService.sendMail(value)
           .subscribe(
               response => console.log(response),
               error => console.log(error)
           );
 
-      this.contactForm.reset()
+      this.contactForm.reset();
   }
 
   //@ViewChild(ReCaptchaComponent) captcha:ReCaptchaComponent;

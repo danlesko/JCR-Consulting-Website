@@ -18,6 +18,7 @@ import {StructureComponent} from './expertise/structure/structure.component';
 import {BiomedicalComponent} from './expertise/biomedical/biomedical.component';
 import {CompositeComponent} from './expertise/composite/composite.component';
 import {ProposalComponent} from './expertise/proposal/proposal.component';
+import { TeachingComponent } from './expertise/teaching/teaching.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import {ProposalComponent} from './expertise/proposal/proposal.component';
         StructureComponent,
         BiomedicalComponent,
         CompositeComponent,
-        ProposalComponent
+        ProposalComponent,
+        TeachingComponent
     ],
     imports: [
         BrowserModule,

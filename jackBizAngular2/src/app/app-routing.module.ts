@@ -7,10 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { AwardsComponent } from './awards/awards.component';
 import { ContactComponent } from './contact/contact.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { BiomedicalComponent} from './expertise/biomedical/biomedical.component'
-import { CompositeComponent} from './expertise/composite/composite.component'
-import { StructureComponent} from './expertise/structure/structure.component'
-import { ProposalComponent} from './expertise/proposal/proposal.component'
+import { BiomedicalComponent} from './expertise/biomedical/biomedical.component';
+import { CompositeComponent} from './expertise/composite/composite.component';
+import { StructureComponent} from './expertise/structure/structure.component';
+import { ProposalComponent} from './expertise/proposal/proposal.component';
+import { TeachingComponent} from './expertise/teaching/teaching.component';
 
 const routes: Routes = [
     {
@@ -48,6 +49,9 @@ const routes: Routes = [
     },
     {
         path: 'proposal', component: ProposalComponent
+    },
+    {
+        path: 'teaching', component: TeachingComponent
     }
 
 
